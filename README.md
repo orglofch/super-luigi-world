@@ -1,5 +1,4 @@
 # Super Luigi World
-===================
 
 A Mario "clone" and my first programming project ever! 
 
