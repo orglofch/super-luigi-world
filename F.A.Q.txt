@@ -1,0 +1,54 @@
+F.A.Q
+
+How do i make my own levels?
+----------------------------
+Thanks to my versatile collision detection all you need to do to make you own level is draw
+coloured lines depending on how you want Luigi to interact with the level. A red colour(12)
+should be drawn on anything that you want Luigi to be able to stand on or anything Luigi
+should not be able to walk through. A red colour (4) should be drawn on anything that Luigi
+should hit his head on while jumping. A width of 1 pixel for the red lines is sufficient
+however not completely reliable. For the level's I created i used a width of 2 pixels
+which works about 98% of the time.To add sprites to your levels such as coins or stars
+simply alter the coordinates of the already defined variables. Music can also be changed 
+by altering the name of the music defined in the Play.File command
+ 
+What do I do if when I try to run the program is says illegal picture ID?                                     
+ -------------------------------------------------------------------------                                         
+If there is an illegal picture idea it means the picture was never created. 
+There are several reasons why this may happen; the file name may be wrong or 
+the directory location may be wrong. Make sure all picture ID's match the picture 
+names in the picture directory and make sure that the SuperLuigiWorld file is saved 
+onto the desktop or an appropriate directory.
+
+
+Luigi jumps to high, what should I do?                                                                                      
+--------------------------------------                                                                                      
+Luigi's jump height and speed are determined by two different variable 'gravity' 
+and 'velocity'. Luigi jumps in a parabolic shape going higher and higher by smaller 
+amounts until the amounts he goes up by becomes negative and he begins to go down. 
+'Velocity' determines the amount Luigi initially goes up by. Gravity determines the 
+amount velocity decreases by every second. Either velocity is too high or gravity is 
+to low if Luigi is jumping to high. Luigi jumping to far horizontally could also be a 
+similair problem encountered. This would occur because the value of motion [which is 
+the value Luigi moves horizontally] is to large. Decreasing the motion variable would
+solve this problem
+
+
+I went off the screen and now i can't move, why is this?                                                          
+ -------------------------------------------------------                                                          
+You have probably discovered a whole in the collision detection or were using test 
+mode. This happens because the program refreshes by constantly redrawing the background 
+foreground and Luigi, however once Luigi walks off the screen the background can no 
+longer reset the image and the previous images remain left on the screen. It is 
+possible that two red images were drawn around Luigi at the last reset and thus
+ he can no long move back or forth.
+
+
+Every time I jump onto a high ledge I hit the corner and fall through?                                                              
+-----------------------------------------------------------------------                                                        
+The problem with creating sideways horizontal collision detection near the feat is
+ sometimes the horizontal collision detection interferes with collision detection 
+that makes Luigi run. For this reason we had to make the horizontal collision detection 
+start 4 pixels above his feat so if Luigi hits something red within those 4 pixels he 
+will not stop which can cause him to fall through the floor. There isn’t much that can 
+be done about this problem.

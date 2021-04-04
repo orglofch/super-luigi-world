@@ -1,0 +1,3 @@
+http://java.comsci.us/examples/awt/graphics/setXORMode.html
+http://cplus.about.com/od/glossar1/g/xor.html
+http://www.awitness.org/delphi_pascal_tutorial/source3/and_xor_icon.html
