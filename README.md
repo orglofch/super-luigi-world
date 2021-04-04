@@ -9,4 +9,4 @@ Create as my final project in my first programming class in high-school. Boy I'v
  - Yes there is an option to change the background music to techno.
  - and more!
 
-![title_screen](https://github.com/orglofch/super-luigi-world/title_screen.bmp)
+![title_screen](https://github.com/orglofch/super-luigi-world/blob/main/title_screen.bmp)
